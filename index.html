@@ -1,0 +1,22 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+
+<script type="text/javascript" src="ContextMenu.js"></script>
+<script type="text/javascript">
+
+window.oncontextmenu = function(event)
+	{
+		var c = new ContextMenu(event);
+		c.AddMenu('Menu', '<a href="ok.html"></a>');
+		c.AddMenu('Menu 2');
+		c.AddMenu('Menu 3');
+		c.AddMenuItem('Menu 3', 'Item');
+		c.Show();
+		return false;
+	}
+</script>
+</body>
+</html>

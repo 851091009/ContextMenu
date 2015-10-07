@@ -1,0 +1,68 @@
+body
+{
+height: 100%;
+}
+
+div#ContextMenuID
+{
+z-index: 999;
+position: absolute;
+border: 1px solid red;
+width: 200px;
+background-color: #F0F0F0;
+border: 1px solid #A2A2A2;
+box-shadow: 1px 1px 3px #000000;
+}
+
+div#ContextMenuID a[id^=menu-]
+{
+position: relative;
+display: block;
+height: 30px;
+border-bottom: 1px solid #D4D4D4;
+text-decoration: none;
+color: #595959;
+}
+
+div#ContextMenuID a[id^=menu-]:hover
+{
+background-color: #E2E2E2;
+color: #000000;
+}
+
+div#ContextMenuID a[id^=menu-] img
+{
+vertical-align: bottom;
+display: inline-block;
+margin: 5px 10px 0 0;
+padding: 0 5px 0 5px;
+border-right: 1px solid #D4D4D4;
+}
+
+div#ContextMenuID a[id^=menu-] img:nth-of-type(2)
+{
+float: right;
+border-right: none;
+margin-right: 0px;
+}
+
+div#ContextMenuID div[id^=BlocMenu-]
+{
+position: absolute;
+left: 195px;
+top: 0px;
+border: 1px solid red;
+width: 150px;
+background-color: #F0F0F0;
+border: 1px solid #A2A2A2;
+box-shadow: 1px 1px 3px #000000;
+display: none;
+}
+
+div#ContextMenuID a[id^=menuitem-]
+{
+height: 30px;
+border-bottom: 1px solid #D4D4D4;
+text-decoration: none;
+color: #595959;
+}
